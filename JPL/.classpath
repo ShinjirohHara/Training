@@ -1,0 +1,76 @@
+<<<<<<< HEAD
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="ch01/ex01_01/src"/>
+	<classpathentry kind="src" path="ch01/ex01_02/src"/>
+	<classpathentry kind="src" path="ch01/ex01_03/src"/>
+	<classpathentry kind="src" path="ch01/ex01_04/src"/>
+	<classpathentry kind="src" path="ch01/ex01_05/src"/>
+	<classpathentry kind="src" path="ch01/ex01_06/src"/>
+	<classpathentry kind="src" path="ch01/ex01_07/src"/>
+	<classpathentry kind="src" path="ch01/ex01_08/src"/>
+	<classpathentry kind="src" path="ch01/ex01_08/test"/>
+	<classpathentry kind="src" path="ch01/ex01_09/src"/>
+	<classpathentry kind="src" path="ch01/ex01_10/src"/>
+	<classpathentry kind="src" path="ch01/ex01_11/src"/>
+	<classpathentry kind="src" path="ch01/ex01_12/src"/>
+	<classpathentry kind="src" path="ch01/ex01_13/src"/>
+	<classpathentry kind="src" path="ch01/ex01_14/src"/>
+	<classpathentry kind="src" path="ch01/ex01_15/src"/>
+	<classpathentry kind="src" path="ch01/ex01_15/test"/>
+	<classpathentry kind="src" path="ch01/ex01_16/src"/>
+	<classpathentry kind="src" path="ch02/ex02_01/src"/>
+	<classpathentry kind="src" path="ch02/ex02_02/src"/>
+	<classpathentry kind="src" path="ch02/ex02_03/src"/>
+	<classpathentry kind="src" path="ch02/ex02_05/src"/>
+	<classpathentry kind="src" path="ch02/ex02_06/src"/>
+	<classpathentry kind="src" path="ch02/ex02_07/src"/>
+	<classpathentry kind="src" path="ch02/ex02_08/src"/>
+	<classpathentry kind="src" path="ch02/ex02_09/src"/>
+	<classpathentry kind="src" path="ch02/ex02_10/src"/>
+	<classpathentry kind="src" path="ch02/ex02_11/src"/>
+	<classpathentry kind="src" path="ch02/ex02_12/src"/>
+	<classpathentry kind="src" path="ch02/ex02_13/src"/>
+	<classpathentry kind="src" path="ch02/ex02_14/src"/>
+	<classpathentry kind="src" path="ch02/ex02_15/src"/>
+	<classpathentry kind="src" path="ch02/ex02_16/src"/>
+	<classpathentry kind="src" path="ch02/ex02_17/src"/>
+	<classpathentry kind="src" path="ch02/ex02_18/src"/>
+	<classpathentry kind="src" path="ch03/ex03_01/src"/>
+	<classpathentry kind="src" path="ch03/ex03_02/src"/>
+	<classpathentry kind="src" path="ch03/ex03_03/src"/>
+	<classpathentry kind="src" path="ch03/ex03_04/src"/>
+	<classpathentry kind="src" path="ch03/ex03_05/src"/>
+	<classpathentry kind="src" path="ch03/ex03_06/src"/>
+	<classpathentry kind="src" path="ch03/ex03_07/src"/>
+	<classpathentry kind="src" path="ch03/ex03_08/src"/>
+	<classpathentry kind="src" path="ch03/ex03_09/src"/>
+	<classpathentry kind="src" path="ch03/ex03_10/src"/>
+	<classpathentry kind="src" path="ch03/ex03_11/src"/>
+	<classpathentry kind="src" path="ch03/ex03_12/src"/>
+	<classpathentry kind="src" path="ch04/ex04_01/src"/>
+	<classpathentry kind="src" path="ch04/ex04_02/src"/>
+	<classpathentry kind="src" path="ch04/ex04_03/src"/>
+	<classpathentry kind="src" path="ch05/ex05_01/src"/>
+	<classpathentry kind="src" path="ch05/ex05_02/src"/>
+	<classpathentry kind="src" path="ch06/ex06_01/src"/>
+	<classpathentry kind="src" path="ch06/ex06_02/src"/>
+	<classpathentry kind="src" path="ch06/ex06_03/src"/>
+	<classpathentry kind="src" path="ch06/ex06_04/src"/>
+	<classpathentry kind="src" path="ch06/ex06_05/src"/>
+	<classpathentry kind="src" path="ch07/ex07_01/src"/>
+	<classpathentry kind="src" path="ch07/ex07_02/src"/>
+	<classpathentry kind="src" path="ch07/ex07_03/src"/>
+	<classpathentry kind="src" path="ch09/ex09_01/src"/>
+	<classpathentry kind="src" path="ch09/ex09_02/src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="output" path="ch09/ex09_02/bin"/>
+</classpath>
+>>>>>>> b1cba06654607544a66536520b1721db1791e43b
