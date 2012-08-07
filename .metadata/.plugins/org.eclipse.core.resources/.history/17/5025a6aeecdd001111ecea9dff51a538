@@ -1,0 +1,15 @@
+package interpret;
+
+import java.awt.Frame;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+public class ParameterSetWindow extends Frame implements ActionListener{
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+}

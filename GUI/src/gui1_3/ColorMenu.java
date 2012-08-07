@@ -13,7 +13,7 @@ public class ColorMenu extends Menu implements ActionListener {
 	 */
 	private static final long serialVersionUID = 1L;
 
-	private Type cuurentColor;
+	private Type currentColor;
 	
 	enum Type {
 		
@@ -36,7 +36,7 @@ public class ColorMenu extends Menu implements ActionListener {
 	
 	public ColorMenu(String menuName, Type color) {
 		super(menuName);
-		cuurentColor = color;
+		currentColor = color;
 		for (Type element: Type.values()) {
 			MenuItem mi = new MenuItem(element.toString());
 			add(mi);
@@ -45,12 +45,12 @@ public class ColorMenu extends Menu implements ActionListener {
 	}
 	
 
-	@Override
+	
 	public void actionPerformed(ActionEvent e) {
-		cuurentColor = Type.valueOf(e.getActionCommand());
+		currentColor = Type.valueOf(e.getActionCommand());
 	}
 	
 	public Type getColor() {
-		return cuurentColor;
+		return currentColor;
 	}
 }

@@ -1,0 +1,18 @@
+package interpret;
+
+import java.lang.reflect.Type;
+
+public class DoubleParam extends ParameterAnalyzer {
+
+	private double data = 0;
+	public DoubleParam(Class<Double> param) {
+		super(param);
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+}

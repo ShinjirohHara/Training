@@ -1,0 +1,14 @@
+package interpret;
+
+import java.lang.reflect.Constructor;
+
+import javax.swing.tree.MutableTreeNode;
+
+public class ConstructorAnalyzer implements DefaultMutableTreeNode {
+
+	private Constructor<?> constroctor;
+	public ConstructorAnalyzer(Constructor<?> elem) {
+		
+	}
+
+}

@@ -1,0 +1,30 @@
+package interpret;
+
+import java.awt.event.MouseEvent;
+import java.lang.reflect.Constructor;
+
+import javax.swing.JMenuItem;
+import javax.swing.JPopupMenu;
+import javax.swing.tree.DefaultMutableTreeNode;
+
+
+public class ConstructorAnalyzer extends DefaultMutableTreeNode {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Constructor<?> constroctor;
+	public ConstructorAnalyzer(Constructor<?> elem) {
+		super(elem.toString());
+		constroctor = elem;
+		
+	}
+	
+	public void mousePressed(MouseEvent me) {
+		JPopupMenu popup = new JPopupMenu();
+		popup.add(new JMenuItem("é¿çsÇ∑ÇÈ"));
+		popup.show(me.getComponent(), me.getX(), me.getY());
+	}
+
+}

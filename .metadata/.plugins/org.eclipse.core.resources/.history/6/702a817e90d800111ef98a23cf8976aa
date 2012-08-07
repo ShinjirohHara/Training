@@ -1,0 +1,8 @@
+package ch16.ex16_04;
+
+public class ClassAnnotation {
+	public static void main (String[] args) {
+		
+	}
+
+}

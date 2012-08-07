@@ -22,7 +22,7 @@ public class FontMenu extends Menu implements ActionListener {
 		}
 	}
 
-	@Override
+	
 	public void actionPerformed(ActionEvent ae) {
 		cuurentFont = ae.getActionCommand();
 		

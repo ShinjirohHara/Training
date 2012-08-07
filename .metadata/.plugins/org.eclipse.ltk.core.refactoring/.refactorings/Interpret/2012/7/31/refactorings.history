@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="メソッド名 &apos;interpret.ClassAnalyzer.addClass(...)&apos; を &apos;getClassNode&apos; に変更します&#x0D;&#x0A;- 元のプロジェクト: &apos;Interpret&apos;&#x0D;&#x0A;- オリジナル要素: &apos;interpret.ClassAnalyzer.addClass(...)&apos;&#x0D;&#x0A;- 名前変更済み要素: &apos;interpret.ClassAnalyzer.getClassNode(...)&apos;&#x0D;&#x0A;- リファクタリングされた要素の参照を更新" delegate="false" deprecate="false" description="メソッド名 &apos;addClass&apos; を変更します" flags="589826" id="org.eclipse.jdt.ui.rename.method" input="/src&lt;interpret{ClassAnalyzer.java[ClassAnalyzer~addClass~QClass\&lt;*&gt;;" name="getClassNode" references="true" stamp="1343658875486" version="1.0"/>
+</session>

@@ -1,0 +1,24 @@
+package interpret;
+
+import java.awt.event.MouseEvent;
+import java.lang.reflect.Method;
+import java.lang.reflect.Type;
+
+import javax.swing.tree.DefaultMutableTreeNode;
+
+public class MethodAnalyzer extends DefaultMutableTreeNode {
+
+	private Method method;
+
+	public MethodAnalyzer(Method method) {
+		super(method.toString());
+		this.method = method;
+		Type[] params = method.getParameterTypes();
+		
+	}
+
+	public void mousePressed(MouseEvent me) {
+		
+	}
+
+}

@@ -1,0 +1,139 @@
+package interpret;
+
+import java.awt.BorderLayout;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
+import java.lang.reflect.Type;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTree;
+import javax.swing.SwingUtilities;
+import javax.swing.event.MenuDragMouseListener;
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.MutableTreeNode;
+
+public class ClassAnalyzer extends JFrame implements MouseListener{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Class<?> target;
+	private JTree tree;
+	private DefaultMutableTreeNode root;
+
+	public ClassAnalyzer(Class<?> target) {
+		this.target = target;
+		setTitle(target.getName());
+		setSize(500, 250);
+		root = new DefaultMutableTreeNode(target.getName());
+		tree = new JTree(root);
+		tree.addMouseListener(this);
+		
+		root.add(setConstructor(target));
+		for (Constructor<?> elem : target.getConstructors()) {
+			root.add(new DefaultMutableTreeNode(elem.toString()));
+		}
+		
+		JScrollPane cpane = new JScrollPane(tree);
+		add(cpane, BorderLayout.CENTER);
+		setVisible(true);
+		
+	}
+	
+	private MutableTreeNode setConstructor(Class<?> cls) {
+		DefaultMutableTreeNode costRoot = new DefaultMutableTreeNode("Constructors");
+		for (Constructors<?> elem : cls.getConstructors()) {
+			constRoot.
+		}
+		costRoot
+		return null;
+	}
+
+	private void createNewInstance() {
+		
+		
+		root.add(getClassNode(target));
+	//	setVisible(true);
+	}
+	
+	private DefaultMutableTreeNode getClassNode(Class<?> cls) {
+		DefaultMutableTreeNode node = new DefaultMutableTreeNode(cls.getName());
+		for (Class<?> elem : cls.getInterfaces())
+			node.add(getClassNode(elem));
+		
+		if (cls.getSuperclass() != null)
+			node.add(getClassNode(cls.getSuperclass()));
+		
+		node.add(setField(cls));
+		node.add(setMethod(cls));
+		return node;
+	}
+
+	private MutableTreeNode setMethod(Class<?> cls) {
+		DefaultMutableTreeNode methodRoot = new DefaultMutableTreeNode("Method");
+		Method[] methos = cls.getMethods();
+		for (Method elem : methos) {
+			methodRoot.add(new MethodAnalyzer(elem));
+		}
+		return methodRoot;
+	}
+
+	private DefaultMutableTreeNode setField(Class<?> cls) {
+		
+		DefaultMutableTreeNode root = new DefaultMutableTreeNode("Field");
+		Field[] fields = cls.getDeclaredFields();
+		for (Field elem : fields) {
+			root.add(new FieldAnalyzer(elem));
+		}
+		return root;
+	}
+
+	public void mousePressed(MouseEvent e) {
+	
+		
+		if (SwingUtilities.isRightMouseButton(e)) {
+			System.out.println("this is ClassAnalyzer:"+e.getButton() );
+			Object selected = tree.getLastSelectedPathComponent();
+			if (selected instanceof FieldAnalyzer) {
+				((FieldAnalyzer) selected).mousePressed(e);
+			} else if (selected instanceof MethodAnalyzer) {
+				((MethodAnalyzer)selected).mousePressed(e);
+			}
+		}
+	}
+	public void start() {
+		createNewInstance();
+		
+	}
+
+	@Override
+	public void mouseClicked(MouseEvent arg0) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	@Override
+	public void mouseEntered(MouseEvent arg0) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	@Override
+	public void mouseExited(MouseEvent arg0) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+	@Override
+	public void mouseReleased(MouseEvent arg0) {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+}

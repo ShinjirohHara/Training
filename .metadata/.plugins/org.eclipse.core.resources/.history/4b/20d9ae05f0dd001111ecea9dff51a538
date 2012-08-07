@@ -1,0 +1,16 @@
+package interpret;
+
+import java.lang.reflect.Type;
+
+public class BooleanParameter extends ParameterAnalyzer {
+
+	public BooleanParameter(Type param) {
+		super(param);
+	}
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+}

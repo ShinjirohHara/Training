@@ -1,0 +1,13 @@
+package interpret;
+
+import java.lang.reflect.Constructor;
+
+import javax.swing.tree.MutableTreeNode;
+
+public class ConstructorAnalyzer implements MutableTreeNode {
+
+	public ConstructorAnalyzer(Constructor<?> elem) {
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
+
+}

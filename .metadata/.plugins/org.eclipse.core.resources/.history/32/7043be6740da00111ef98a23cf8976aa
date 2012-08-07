@@ -1,0 +1,14 @@
+package interpret;
+
+import java.lang.reflect.Field;
+
+import javax.swing.tree.DefaultMutableTreeNode;
+
+public class FieldAnalyzer extends DefaultMutableTreeNode{
+
+	Field field;
+	public FieldAnalyzer(Field field) {
+		super(field.getName());
+		this.field = field;
+	}
+}

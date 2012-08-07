@@ -1,0 +1,16 @@
+package interpret;
+
+import java.lang.reflect.Type;
+
+public class IntegerParameter extends ParameterAnalyzer{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private int = 0;
+	public IntegerParameter(Class<Integer> param) {
+		super(param);
+	}
+}

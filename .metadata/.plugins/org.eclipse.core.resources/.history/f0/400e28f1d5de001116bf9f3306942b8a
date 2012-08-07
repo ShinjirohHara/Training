@@ -1,0 +1,6 @@
+package interpret;
+
+public interface ConstructorListener {
+	public void receiveNewInstance(Object istance);
+
+}

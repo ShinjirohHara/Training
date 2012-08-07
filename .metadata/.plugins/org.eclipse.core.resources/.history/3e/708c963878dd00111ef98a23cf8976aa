@@ -1,0 +1,12 @@
+package interpret;
+
+import java.lang.reflect.Type;
+
+public class IntegerParameter extends ParameterAnalyzer{
+
+	public IntegerParameter(Type param) {
+		super(param);
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
+
+}

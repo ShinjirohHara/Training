@@ -1,0 +1,20 @@
+package interpret;
+
+import java.lang.reflect.Type;
+
+public class FloatParameter extends ParameterAnalyzer {
+
+	private float data = 0;
+	public FloatParameter(Class<Float> param) {
+		super(param);
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
+	
+	
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+}

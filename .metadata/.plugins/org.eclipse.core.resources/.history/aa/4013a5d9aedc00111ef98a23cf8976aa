@@ -1,0 +1,13 @@
+package interpret;
+
+import java.lang.reflect.Type;
+
+import javax.swing.tree.MutableTreeNode;
+
+public class ParameterAnalyzer extends DefaultMutableTreeNode {
+
+	public ParameterAnalyzer(Type param) {
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
+
+}

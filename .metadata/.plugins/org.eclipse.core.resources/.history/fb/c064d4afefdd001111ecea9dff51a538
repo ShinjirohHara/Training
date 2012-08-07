@@ -1,0 +1,13 @@
+package interpret;
+
+import java.lang.reflect.Type;
+
+public class LongParameter extends ParameterAnalyzer {
+
+	public LongParameter(Class<Long> param) {
+		super(param);
+	}
+	
+	
+
+}

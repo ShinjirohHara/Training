@@ -1,0 +1,47 @@
+package interpret;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.MouseEvent;
+import java.lang.reflect.Type;
+
+import javax.swing.JMenuItem;
+import javax.swing.JPopupMenu;
+
+public class BooleanParameter extends ParameterAnalyzer implements Runnable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private boolean data = false;
+	
+	public BooleanParameter(Class<?> param) {
+		super(param);
+	}
+	
+	public void mousePressed(MouseEvent me) {
+		JPopupMenu popup = new JPopupMenu();
+		JMenuItem jmi = new JMenuItem("ílÇê›íËÇ∑ÇÈ");
+		jmi.addActionListener(this);
+		popup.add(jmi);
+		popup.show(me.getComponent(), me.getX(), me.getY());
+	}
+	
+
+
+	
+	public Object getData(){
+		return new Boolean(data);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent ae) {
+		new Thread(this).start();
+	}
+	@Override
+	public void run() {
+		ParameterSetWindow psw = new ParameterSetWindow();
+		setData(Boolean.parseBoolean(psw.getParameter()));
+		setUserObject(cls.toString() + ":" + data);
+	}
+}

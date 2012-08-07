@@ -1,0 +1,14 @@
+package interpret;
+
+import java.lang.reflect.Method;
+
+import javax.swing.tree.DefaultMutableTreeNode;
+
+public class MethodAnalyzer extends DefaultMutableTreeNode {
+
+	public MethodAnalyzer(Method method) {
+		super(method.toString());
+		this.method = method;
+	}
+
+}

@@ -1,0 +1,11 @@
+package interpret;
+
+import java.lang.reflect.Type;
+
+public class ParameterAnalyzer {
+
+	public ParameterAnalyzer(Type param) {
+		// TODO 自動生成されたコンストラクター・スタブ
+	}
+
+}

@@ -1,0 +1,98 @@
+package interpret;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.lang.reflect.Field;
+import java.lang.reflect.Type;
+
+import javax.swing.JMenuItem;
+import javax.swing.JPopupMenu;
+import javax.swing.tree.DefaultMutableTreeNode;
+
+
+public class ParameterAnalyzer extends DefaultMutableTreeNode implements ActionListener, ConstructorListener {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	Class<?> cls;
+	
+	private Object data = null;
+
+	@SuppressWarnings("unchecked")
+	public static ParameterAnalyzer createParameterAnalyzer(Type param) {
+		ParameterAnalyzer result = null;
+		if (param == int.class || param == Integer.class) {
+			result = new IntegerParameter((Class<Integer>)param);
+		} else if (param == long.class || param == Long.class) {
+			result = new LongParameter((Class<Long>)param);
+		} else if (param == boolean.class || param == Boolean.class) {
+			result = new BooleanParameter((Class<Boolean>)param);
+		} else if (param == float.class || param == Float.class) {
+			result = new FloatParameter((Class<Float>)param);
+		} else if (param == double.class || param == Double.class) {
+			result = new DoubleParam((Class<Double>)param);
+		} else if (param == String.class) {
+			result = new StringParameter((Class<String>)param);
+		} else if (param instanceof Class<?>){
+			result = new ParameterAnalyzer((Class<?>) param);
+		}
+		return result;
+	}
+	public ParameterAnalyzer(Class<?> param) {
+		super(param.toString()+ ": null               ");
+		this.cls = param;
+	}
+	
+	public void mousePressed(MouseEvent me) {
+		JPopupMenu popup = new JPopupMenu();
+		JMenuItem jmi = new JMenuItem("インスタンスを生成する");
+		jmi.addActionListener(this);
+		popup.add(jmi);
+		popup.show(me.getComponent(), me.getX(), me.getY());
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent ae) {
+		try {
+			data = cls.newInstance();
+			setUserObject(cls.toString() + ":" + data.hashCode());
+			Field[] fields = cls.getDeclaredFields();
+			for (Field elem : fields)
+				add(createParameterAnalyzer(elem.getGenericType()));
+		} catch (InstantiationException e) {
+			System.out.println("未サポートです。："+ cls.toString());
+		} catch (IllegalAccessException e) {
+			System.out.println("アクセス権限がありません。："+ cls.toString());
+		}
+	}
+	
+	
+	
+	final public void setData(Object data) {
+		this.data = data;
+	}
+	
+	final public Object getData(){
+		return data;
+	}
+	
+	
+	public String toString() {
+		String result = cls.toString() + " : " + data;
+		int length = 30 - result.length();
+		for (int i = 0; i < length; i++)
+			result += " ";
+		
+		return result;
+	}
+	
+	@Override
+	public void receiveNewInstance(Object instance) {
+		setData(instance);
+	}
+
+}

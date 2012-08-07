@@ -1,0 +1,21 @@
+package ch16.ex16_04;
+import java.lang.reflect.*;
+
+public class ClassAnnotation {
+	public static void main (String[] args) {
+		if (args.length < 1) {
+			throw new IllegalArgumentException("too few parameter");
+		}
+		
+		Class<?> cls;
+		try {
+			cls = Class.forName(args[0]);
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+			return;
+		}
+		
+		Annotation[] annotations = cls.getAnnotations();
+	}
+
+}

@@ -1,0 +1,10 @@
+package interpret;
+
+public class BooleanParameter extends ParameterAnalyzer {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+}

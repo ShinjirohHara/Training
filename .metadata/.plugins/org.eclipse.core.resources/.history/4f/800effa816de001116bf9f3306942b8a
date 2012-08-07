@@ -1,0 +1,47 @@
+package interpret;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.lang.reflect.Method;
+import java.lang.reflect.Type;
+
+import javax.swing.JMenuItem;
+import javax.swing.JPopupMenu;
+import javax.swing.tree.DefaultMutableTreeNode;
+
+public class MethodAnalyzer extends DefaultMutableTreeNode implements ActionListener {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	private Method method;
+
+	public MethodAnalyzer(Method method) {
+		super(method.toString());
+		this.method = method;
+		Type[] params = method.getParameterTypes();
+		for (Type param : params)
+			add(ParameterAnalyzer.createParameterAnalyzer(param));
+		
+	}
+
+	public void mousePressed(MouseEvent me) {
+		JPopupMenu popup = new JPopupMenu();
+		JMenuItem jmi = new JMenuItem("インスタンスを生成する");
+		jmi.addActionListener(this);
+		popup.add(jmi);
+		popup.show(me.getComponent(), me.getX(), me.getY());		
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent ae) {
+		Object[] params = new Object[getChildCount()];
+		for (int i = 0; i < params.length; i++) {
+			params[i] = ((ParameterAnalyzer)getChildAt(i)).getData();
+		}
+		
+	}
+
+}

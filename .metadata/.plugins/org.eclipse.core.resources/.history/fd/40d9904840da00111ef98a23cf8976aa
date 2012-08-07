@@ -1,0 +1,7 @@
+package interpret;
+
+import javax.swing.tree.DefaultMutableTreeNode;
+
+public class FieldAnalyzer extends DefaultMutableTreeNode{
+
+}

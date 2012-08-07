@@ -1,0 +1,28 @@
+package interpret;
+
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.lang.reflect.Field;
+
+import javax.swing.JPopupMenu;
+import javax.swing.tree.DefaultMutableTreeNode;
+
+public class FieldAnalyzer extends DefaultMutableTreeNode {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	Field field;
+	public FieldAnalyzer(Field field) {
+		super(field.getName());
+		this.field = field;
+	}
+	public void mousePressed() {
+		JPopupMenu popup = new JPopupMenu();
+		popup.add(new JMenuItem("ílÇê›íËÇ∑ÇÈ"));
+		
+	}
+
+}
+

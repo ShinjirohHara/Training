@@ -83,7 +83,7 @@ public class Display extends Window implements MouseMotionListener, MouseListene
 	
 	
 	
-	@Override
+	
 	public void mouseDragged(MouseEvent e) {
 		if (pressedPoint == null) {
 			throw new IllegalStateException("Mouse is not pressed");
@@ -92,25 +92,25 @@ public class Display extends Window implements MouseMotionListener, MouseListene
 		current.translate(e.getPoint().x - pressedPoint.x, e.getPoint().y - pressedPoint.y);
 		setLocation(current);
 	}
-	@Override
+	
 	public void mouseMoved(MouseEvent e) {
 		
 	}
-	@Override
+	
 	public void mouseClicked(MouseEvent me) {
 		
 	}
-	@Override
+	
 	public void mouseEntered(MouseEvent arg0) {
 		
 	}
 	
-	@Override
+	
 	public void mouseExited(MouseEvent arg0) {
 		
 	}
 	
-	@Override
+	
 	public void mousePressed(MouseEvent e) {
 		if (e.isPopupTrigger()) {
 			property.show(e.getComponent(), e.getX(), e.getY());
@@ -119,7 +119,7 @@ public class Display extends Window implements MouseMotionListener, MouseListene
 		}
 	}
 	
-	@Override
+	
 	public void mouseReleased(MouseEvent e) {
 		if (e.isPopupTrigger()) {
 			property.show(e.getComponent(), e.getX(), e.getY());

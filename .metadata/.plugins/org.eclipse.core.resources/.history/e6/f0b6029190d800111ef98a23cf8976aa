@@ -1,0 +1,10 @@
+package ch16.ex16_04;
+
+public class ClassAnnotation {
+	public static void main (String[] args) {
+		if (args.length < 1) {
+			throw new IllegalArgumentException("too few parameter");
+		}
+	}
+
+}

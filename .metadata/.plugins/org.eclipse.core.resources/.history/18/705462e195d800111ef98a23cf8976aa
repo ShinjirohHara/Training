@@ -1,0 +1,59 @@
+package ch16.ex16_05;
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class ClassContents {
+	public static void main(String[] args) {
+		if (args.length < 1) throw new IllegalArgumentException("too few arguments");
+		try {
+			Class<?> c = Class.forName(args[0]);
+			System.out.println(c);
+			for (Annotation elem : c.getAnnotations()) 
+					System.out.println("  "+elem);
+			
+		
+			System.out.println("===Fields===");
+			List<Field> fields = new ArrayList<Field>(Arrays.asList(c.getFields()));
+			for (Field elem : c.getDeclaredFields())
+				if (!fields.contains(elem)) 
+					fields.add(elem);								
+			printMembers(fields);
+			
+			System.out.println("===Constructors===");
+			List<Constructor> constructors = new ArrayList<Constructor>(Arrays.asList(c.getConstructors()));
+			for (Constructor elem : c.getDeclaredConstructors()) 
+				if (!constructors.contains(elem))
+					constructors.add(elem);
+			printMembers(constructors);
+			
+			
+			System.out.println("===Methods===");
+			List<Method> methos = new ArrayList<Method>(Arrays.asList(c.getMethods()));
+			for (Method elem : c.getDeclaredMethods())
+				if (!methos.contains(elem))
+					methos.add(elem);
+			printMembers(methos);
+			
+		} catch (ClassNotFoundException e) {
+			System.out.println("unknown class: " + args[0]);
+		}
+	}
+	
+	private static void printMembers(List<? extends Member> mems) {
+		for (Member m : mems) {
+			if (m.getDeclaringClass() == Object.class)
+				continue;
+			System.out.print(" ");
+			System.out.println(m);
+			if (m instanceof AnnotatedElement) {
+				AnnotatedElement ae = (AnnotatedElement) m;
+				for (Annotation elem : ae.getAnnotations()) 
+					System.out.println("  "+elem);
+			}
+		}
+	}
+}

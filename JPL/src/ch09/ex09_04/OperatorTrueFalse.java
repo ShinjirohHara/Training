@@ -2,6 +2,7 @@ package ch09.ex09_04;
 
 public class OperatorTrueFalse {
 	public static void main(String args[]) {
+		
 		System.out.println("3 << 2L -1 = "+ (3 << 2L - 1)); // int
 		System.out.println("((3L << 2) -1 = "+ ((3L << 2) - 1)); // long
 		System.out.println("10 < 12 == 6 > 17 = "+ (10 < 12 == 6 < 17)); // boolean

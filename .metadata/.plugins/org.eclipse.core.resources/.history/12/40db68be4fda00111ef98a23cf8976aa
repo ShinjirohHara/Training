@@ -1,0 +1,21 @@
+package interpret;
+
+import java.lang.reflect.Method;
+
+import javax.swing.tree.DefaultMutableTreeNode;
+
+public class MethodAnalyzer extends DefaultMutableTreeNode {
+
+	private Method method;
+
+	public MethodAnalyzer(Method method) {
+		super(method.toString());
+		this.method = method;
+	}
+
+	public void mousePressed() {
+		// TODO 自動生成されたメソッド・スタブ
+		
+	}
+
+}

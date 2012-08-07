@@ -1,0 +1,11 @@
+package interpret;
+
+import java.lang.reflect.Type;
+
+public class StringParameter extends ParameterAnalyzer {
+
+	public StringParameter(Class<String> param) {
+		super(param);
+	}
+
+}

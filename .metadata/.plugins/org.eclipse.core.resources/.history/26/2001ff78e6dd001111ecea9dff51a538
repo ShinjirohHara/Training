@@ -1,0 +1,57 @@
+package interpret;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.lang.reflect.Type;
+
+import javax.swing.JMenuItem;
+import javax.swing.JPopupMenu;
+import javax.swing.tree.DefaultMutableTreeNode;
+
+
+public class ParameterAnalyzer extends DefaultMutableTreeNode implements ActionListener {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	Type param;
+
+	public static ParameterAnalyzer createParameterAnalyzer(Type param) {
+		ParameterAnalyzer result = null;
+		if (param == int.class || param == Integer.class) {
+			result = new IntegerParameter(param);
+		} else if (param == long.class || param == Long.class) {
+			result = new LongParameter(param);
+		} else if (param == boolean.class || param == Boolean.class) {
+			result = new BooleanParameter(param);
+		} else if (param == float.class || param == Float.class) {
+			result = new FloatParameter(param);
+		} else if (param == double.c || param == Double.class) { 
+		} else if (param == String.class) {
+			result = new StringParameter(param);
+		} 
+		return result;
+	}
+	public ParameterAnalyzer(Type param) {
+		super(param.toString());
+		this.param = param;
+	}
+	
+	public void mousePressed(MouseEvent me) {
+		JPopupMenu popup = new JPopupMenu();
+		JMenuItem jmi = new JMenuItem("ílÇê›íËÇ∑ÇÈ");
+		jmi.addActionListener(this);
+		popup.add(jmi);
+		popup.show(me.getComponent(), me.getX(), me.getY());
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent ae) {
+		param.
+		
+	}
+
+}

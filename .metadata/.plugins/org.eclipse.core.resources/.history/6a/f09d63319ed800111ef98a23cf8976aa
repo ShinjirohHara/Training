@@ -1,0 +1,35 @@
+package interpret;
+
+import java.awt.Button;
+import java.awt.Frame;
+import java.awt.TextField;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+public class Interpreter extends Frame{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private TextField classDialog;
+	public static void main(String[] args) {
+		Interpreter iterpreter = new Interpreter();
+		iterpreter.setVisible(true);
+	}
+	
+	public Interpreter() {
+		super("Interpreter");
+		setSize(200, 100);
+		classDialog = new TextField(100);
+		add(classDialog);
+		Button ok = new Button("OK");
+		add(ok);
+		addWindowListener(new WindowAdapter(){
+			public void windowClosing(WindowEvent e) {
+				System.exit(0);
+			}
+		});		
+	}
+}

@@ -1,0 +1,7 @@
+package interpret;
+
+import javax.swing.tree.MutableTreeNode;
+
+public class ConstructorAnalyzer implements MutableTreeNode {
+
+}

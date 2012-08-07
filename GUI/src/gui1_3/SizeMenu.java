@@ -54,7 +54,7 @@ public class SizeMenu extends Menu implements ActionListener {
 		return currentSize;
 	}
 
-	@Override
+	
 	public void actionPerformed(ActionEvent ae) {
 		currentSize = Value.getValue(ae.getActionCommand());
 	}

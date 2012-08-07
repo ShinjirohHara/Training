@@ -1,0 +1,19 @@
+package interpret;
+
+import java.awt.Button;
+import java.awt.Frame;
+import java.awt.TextField;
+
+public class Interpreter extends Frame{
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private TextField classDialog;
+	public static void main(String[] args) {
+		TextField classDialog = new TextField();
+				Button ok = new Button("OK");
+	}
+}
