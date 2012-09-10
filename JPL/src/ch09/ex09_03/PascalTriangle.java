@@ -24,7 +24,7 @@ public class PascalTriangle {
 	
 	
 	public void display() {
-		// ÅIs‚Ì’·‚³‚ğ’²‚×‚é
+		// æœ€çµ‚è¡Œã®é•·ã•ã‚’èª¿ã¹ã‚‹
 		String lastLine = "";
 		for (int i = 0; i < trianble[depth - 1].length; i++) {
 			lastLine += trianble[depth - 1][i] + " ";
@@ -37,7 +37,7 @@ public class PascalTriangle {
 				line += trianble[i][j]+" ";
 			}
 			
-			// ‹ó”’‚ğ–„‚ß‚ÄƒŒƒCƒAƒEƒg‚ğ‘µ‚¦‚é
+			// ç©ºç™½ã‚’åŸ‹ã‚ã¦ãƒ¬ã‚¤ã‚¢ã‚¦ãƒˆã‚’æƒãˆã‚‹
 			for (int j = 0; j < (lastLine.length() - line.length()) /2; j++) {
 				System.out.print(" ");
 			}

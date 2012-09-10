@@ -7,7 +7,7 @@ public class Fibonacci {
 	public static void main(String[] args) {
 		int lo = 1;
 		int hi = 1;
-		System.out.println("ƒtƒBƒ{ƒiƒbƒ`”—ñ");
+		System.out.println("ãƒ•ã‚£ãƒœãƒŠãƒƒãƒæ•°åˆ—");
 		int[] intArray = new int[MAX_LENGTH];
 		for (int i = 0; i < intArray.length; i++) {
 			intArray[i] = lo;
@@ -16,7 +16,7 @@ public class Fibonacci {
 		}
 		
 		for (int i = 0; i < intArray.length; i++) {
-			System.out.println((i+1)+"”Ô–Ú‚Ì—v‘fF" + intArray[i]);
+			System.out.println((i+1)+"ç•ªç›®ã®è¦ç´ ï¼š" + intArray[i]);
 		}
 	}
 }

@@ -25,17 +25,17 @@ public class Property extends PopupMenu implements ActionListener{
 		
 		public Property() {
 			super();
-			font = new FontMenu("ƒtƒHƒ“ƒg", Font.SANS_SERIF);
+			font = new FontMenu("ãƒ•ã‚©ãƒ³ãƒˆ", Font.SANS_SERIF);
 			add(font);
 			 
 			 
-			size = new SizeMenu("ƒTƒCƒY", SizeMenu.Value.SIZE64);
+			size = new SizeMenu("ã‚µã‚¤ã‚º", SizeMenu.Value.SIZE64);
 			add(size);
 			
-			stringColor = new ColorMenu("•¶šFƒJƒ‰[", ColorMenu.Type.BLUE);
+			stringColor = new ColorMenu("æ–‡å­—è‰²ã‚«ãƒ©ãƒ¼", ColorMenu.Type.BLUE);
 			add(stringColor);
 			
-			backGroundColor = new ColorMenu("”wŒiF", ColorMenu.Type.WHITE);
+			backGroundColor = new ColorMenu("èƒŒæ™¯è‰²", ColorMenu.Type.WHITE);
 			add(backGroundColor);
 			
 			addActionListener(this);

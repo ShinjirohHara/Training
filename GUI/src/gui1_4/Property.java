@@ -24,20 +24,20 @@ import java.util.prefs.Preferences;
 public class Property extends Dialog implements ActionListener{
 
 	private static final long serialVersionUID = 7331917309522579598L;
-	static final String TITLE_NAME = "•\¦‚ÌƒvƒƒpƒeƒB";
-	static final String MENU_NAME = "ƒvƒƒpƒeƒB";
+	static final String TITLE_NAME = "è¡¨ç¤ºã®ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£";
+	static final String MENU_NAME = "ãƒ—ãƒ­ãƒ‘ãƒ†ã‚£";
 	private Preferences prefs = Preferences.userNodeForPackage(this.getClass());
 
-	private static final String fontKey = "ƒtƒHƒ“ƒg";
+	private static final String fontKey = "ãƒ•ã‚©ãƒ³ãƒˆ";
 	private Choice font;
 
-	private static final String sizeKey = "ƒTƒCƒY";
+	private static final String sizeKey = "ã‚µã‚¤ã‚º";
 	private Choice size;
 
-	private static final String colorKey = "•¶šF";
+	private static final String colorKey = "æ–‡å­—è‰²";
 	private Choice color;
 
-	private static final String bkColorKey = "”wŒiF";
+	private static final String bkColorKey = "èƒŒæ™¯è‰²";
 	private Choice bkColor;
 
 	private DigitalWatch watch;

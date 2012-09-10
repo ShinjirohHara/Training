@@ -9,20 +9,20 @@ public class NumSequence {
 	public static void main(String[] args) {
 		int i = 1;
 		int num = 1;
-		System.out.println("An = ƒ°i");
-		System.out.println(i+"”Ô–Ú:"+num);
+		System.out.println("An = Î£i");
+		System.out.println(i+"ç•ªç›®:"+num);
 		while (i < 10) {
 			i++;
 			num = num + i;
-			System.out.println(i+"”Ô–Ú:"+num);
+			System.out.println(i+"ç•ªç›®:"+num);
 		}
 		
 		i = 0;
 		num = 0;
-		System.out.println("•½•ûª");
+		System.out.println("å¹³æ–¹æ ¹");
 		while (i < 10) {
 			i++;
-			System.out.println(i+"”Ô–ÚF"+i*i);
+			System.out.println(i+"ç•ªç›®ï¼š"+i*i);
 		}
 	}
 }

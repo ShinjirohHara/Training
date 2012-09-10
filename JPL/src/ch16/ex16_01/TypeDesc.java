@@ -36,7 +36,7 @@ public class TypeDesc {
 			throw new Error("Unexpected non-class type");
 		
 		// if (cls.equals(Object.class)) return;
-		if (cls == Object.class) return; // Ç«ÇøÇÁÇ≈Ç‡OK?
+		if (cls == Object.class) return; // „Å©„Å°„Çâ„Åß„ÇÇOK?
 		
 		for (int i = 0; i < depth; i++)
 			out.print(" ");

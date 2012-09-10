@@ -2,16 +2,16 @@ package ch01.ex01_06;
 
 
 public class Fibonacci {
-	private static final String title = "ƒtƒBƒ{ƒiƒbƒ`”—ñ by const";
+	private static final String title = "ãƒ•ã‚£ãƒœãƒŠãƒƒãƒæ•°åˆ— by const";
 	public static void main(String[] args) {
 		int lo = 1;
 		int hi = 1;
 		System.out.println(title);
 		int i = 1;
-		System.out.println(i+"”Ô–Ú:"+lo);
+		System.out.println(i+"ç•ªç›®:"+lo);
 		while (hi < 50) {
 			i++;
-			System.out.println(i+ "”Ô–Ú:"+hi);
+			System.out.println(i+ "ç•ªç›®:"+hi);
 			hi = lo + hi;
 			lo = hi - lo;
 		}

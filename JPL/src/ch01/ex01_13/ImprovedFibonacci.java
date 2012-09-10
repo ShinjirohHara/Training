@@ -2,7 +2,7 @@ package ch01.ex01_13;
 
 
 public class ImprovedFibonacci {
-	private static final String title = "ƒtƒBƒ{ƒiƒbƒ`”—ñ";
+	private static final String title = "ãƒ•ã‚£ãƒœãƒŠãƒƒãƒæ•°åˆ—";
 	private static final int MAX_INDEX = 10;
 	public static void main(String[] args) {
 		int lo = 1;
@@ -23,7 +23,7 @@ public class ImprovedFibonacci {
 		}
 		
 		for (int i = 0; i < MAX_INDEX; i++) {
-			System.out.printf("%2d”Ô–Ú:%s%n", i+1, numSequence[i]);
+			System.out.printf("%2dç•ªç›®:%s%n", i+1, numSequence[i]);
 		}
 	}
 }

@@ -28,7 +28,7 @@ public class PascalTriangleWhile {
 	
 	
 	public void display() {
-		// ÅŒã‚Ìs‚Ì’·‚³‚ğ’²‚×‚é
+		// æœ€å¾Œã®è¡Œã®é•·ã•ã‚’èª¿ã¹ã‚‹
 		String lastLine = "";
 		int i = 0;
 		while (i < trianble[depth - 1].length) {
@@ -45,7 +45,7 @@ public class PascalTriangleWhile {
 				j++;
 			}
 			
-			// ‹ó”’‚ğ•\¦‚·‚é
+			// ç©ºç™½ã‚’è¡¨ç¤ºã™ã‚‹
 			j = 0;
 			while(j < (lastLine.length() - line.length()) /2) {
 				System.out.print(" ");

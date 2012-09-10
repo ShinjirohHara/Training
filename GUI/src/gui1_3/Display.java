@@ -36,7 +36,7 @@ public class Display extends Window implements MouseMotionListener, MouseListene
 		}
 	}
 	Display() {
-		super(new Frame("DegitalWatch"));
+		super(new Frame("DigitalWatch"));
 		setSize(400, 200);
 		setVisible(true);
 		add(property);

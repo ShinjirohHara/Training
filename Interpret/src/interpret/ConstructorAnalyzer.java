@@ -46,7 +46,7 @@ public class ConstructorAnalyzer extends DefaultMutableTreeNode implements Actio
 	
 	public void mousePressed(MouseEvent me) {
 		JPopupMenu popup = new JPopupMenu();
-		JMenuItem jmi = new JMenuItem("ƒCƒ“ƒXƒ^ƒ“ƒX‚ğ¶¬‚·‚é");
+		JMenuItem jmi = new JMenuItem("ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã™ã‚‹");
 		jmi.addActionListener(this);
 		popup.add(jmi);
 		popup.show(me.getComponent(), me.getX(), me.getY());

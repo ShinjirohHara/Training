@@ -1,0 +1,6 @@
+test1 + 111
+test1 - 11
+test2 + 333
+test1 * 100
+test3 - 100
+test2 - 33

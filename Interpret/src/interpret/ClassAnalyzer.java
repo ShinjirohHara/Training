@@ -1,6 +1,8 @@
 package interpret;
 
 import java.awt.BorderLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.lang.reflect.Constructor;
@@ -10,6 +12,8 @@ import java.lang.reflect.Method;
 
 import javax.swing.JFrame;
 
+import javax.swing.JMenuItem;
+import javax.swing.JPopupMenu;
 import javax.swing.JScrollPane;
 import javax.swing.JTree;
 import javax.swing.SwingUtilities;
@@ -18,7 +22,7 @@ import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.MutableTreeNode;
 
-public class ClassAnalyzer extends JFrame implements MouseListener, InstanceListener{
+public class ClassAnalyzer extends JFrame implements MouseListener, InstanceListener, ActionListener, Runnable{
 
 	/**
 	 * 
@@ -40,7 +44,6 @@ public class ClassAnalyzer extends JFrame implements MouseListener, InstanceList
 		JScrollPane cpane = new JScrollPane(tree);
 		add(cpane, BorderLayout.CENTER);
 		setVisible(true);
-		
 	}
 	
 	Object getData() {
@@ -94,10 +97,10 @@ public class ClassAnalyzer extends JFrame implements MouseListener, InstanceList
 				elem.setAccessible(true);
 				root.add(new FieldAnalyzer(elem, this, elem.get(data)));
 			} catch (IllegalArgumentException e) {
-				// TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
+				// TODO è‡ªå‹•ç”Ÿæˆã•ã‚ŒãŸ catch ãƒ–ãƒ­ãƒƒã‚¯
 				e.printStackTrace();
 			} catch (IllegalAccessException e) {
-				// TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
+				// TODO è‡ªå‹•ç”Ÿæˆã•ã‚ŒãŸ catch ãƒ–ãƒ­ãƒƒã‚¯
 				e.printStackTrace();
 			}
 		}
@@ -109,6 +112,7 @@ public class ClassAnalyzer extends JFrame implements MouseListener, InstanceList
 		if (SwingUtilities.isRightMouseButton(e)) {
 			System.out.println("this is ClassAnalyzer:"+e.getButton() );
 			Object selected = tree.getLastSelectedPathComponent();
+			System.out.println("selected:"+selected.getClass());
 			if (selected instanceof FieldAnalyzer) {
 				((FieldAnalyzer) selected).mousePressed(e);
 			} else if (selected instanceof MethodAnalyzer) {
@@ -117,6 +121,12 @@ public class ClassAnalyzer extends JFrame implements MouseListener, InstanceList
 				((ConstructorAnalyzer)selected).mousePressed(e);
 			} else if (selected instanceof ParameterAnalyzer) {
 				((ParameterAnalyzer) selected).mousePressed(e);
+			} else if (selected == root) {
+				JPopupMenu popup = new JPopupMenu();
+				JMenuItem jmi = new JMenuItem("save as");
+				jmi.addActionListener(this);
+				popup.add(jmi);
+				popup.show(e.getComponent(), e.getX(), e.getY());
 			}
 		}
 	}
@@ -124,25 +134,25 @@ public class ClassAnalyzer extends JFrame implements MouseListener, InstanceList
 
 	
 	public void mouseClicked(MouseEvent arg0) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO è‡ªå‹•ç”Ÿæˆã•ã‚ŒãŸãƒ¡ã‚½ãƒƒãƒ‰ãƒ»ã‚¹ã‚¿ãƒ–
 		
 	}
 
 	
 	public void mouseEntered(MouseEvent arg0) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO è‡ªå‹•ç”Ÿæˆã•ã‚ŒãŸãƒ¡ã‚½ãƒƒãƒ‰ãƒ»ã‚¹ã‚¿ãƒ–
 		
 	}
 
 	
 	public void mouseExited(MouseEvent arg0) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO è‡ªå‹•ç”Ÿæˆã•ã‚ŒãŸãƒ¡ã‚½ãƒƒãƒ‰ãƒ»ã‚¹ã‚¿ãƒ–
 		
 	}
 
 	
 	public void mouseReleased(MouseEvent arg0) {
-		// TODO ©“®¶¬‚³‚ê‚½ƒƒ\ƒbƒhEƒXƒ^ƒu
+		// TODO è‡ªå‹•ç”Ÿæˆã•ã‚ŒãŸãƒ¡ã‚½ãƒƒãƒ‰ãƒ»ã‚¹ã‚¿ãƒ–
 		
 	}
 
@@ -159,6 +169,16 @@ public class ClassAnalyzer extends JFrame implements MouseListener, InstanceList
 		} catch (IllegalAccessException e) {
 			e.printStackTrace();
 		}
+	}
+
+	public void actionPerformed(ActionEvent arg0) {
+		new Thread(this).start();
+	}
+
+	
+	public void run() {
+		ParameterSetWindow psw = new ParameterSetWindow();
+		DataHolder.putData(psw.getParameter(), data);
 	}
 
 }

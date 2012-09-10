@@ -65,7 +65,7 @@ public class ParameterAnalyzer extends DefaultMutableTreeNode implements ActionL
 	
 	public void mousePressed(MouseEvent me) {
 		JPopupMenu popup = new JPopupMenu();
-		JMenuItem jmi = new JMenuItem("ƒCƒ“ƒXƒ^ƒ“ƒX‚ğ¶¬‚·‚é");
+		JMenuItem jmi = new JMenuItem("ã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹ã‚’ç”Ÿæˆã™ã‚‹");
 		jmi.addActionListener(this);
 		popup.add(jmi);
 		popup.show(me.getComponent(), me.getX(), me.getY());
@@ -88,9 +88,9 @@ public class ParameterAnalyzer extends DefaultMutableTreeNode implements ActionL
 				}
 			}
 		} catch (InstantiationException e) {
-			System.out.println("–¢ƒTƒ|[ƒg‚Å‚·BF"+ cls.toString());
+			System.out.println("æœªã‚µãƒãƒ¼ãƒˆã§ã™ã€‚ï¼š"+ cls.toString());
 		} catch (IllegalAccessException e) {
-			System.out.println("ƒAƒNƒZƒXŒ ŒÀ‚ª‚ ‚è‚Ü‚¹‚ñBF"+ cls.toString());
+			System.out.println("ã‚¢ã‚¯ã‚»ã‚¹æ¨©é™ãŒã‚ã‚Šã¾ã›ã‚“ã€‚ï¼š"+ cls.toString());
 		}
 	}
 	
@@ -126,10 +126,10 @@ public class ParameterAnalyzer extends DefaultMutableTreeNode implements ActionL
 		try {
 			field.set(data, object);
 		} catch (IllegalArgumentException e) {
-			// TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
+			// TODO è‡ªå‹•ç”Ÿæˆã•ã‚ŒãŸ catch ãƒ–ãƒ­ãƒƒã‚¯
 			e.printStackTrace();
 		} catch (IllegalAccessException e) {
-			// TODO ©“®¶¬‚³‚ê‚½ catch ƒuƒƒbƒN
+			// TODO è‡ªå‹•ç”Ÿæˆã•ã‚ŒãŸ catch ãƒ–ãƒ­ãƒƒã‚¯
 			e.printStackTrace();
 		}
 	}

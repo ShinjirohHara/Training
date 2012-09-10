@@ -18,7 +18,7 @@ public class DoubleParam extends ParameterAnalyzer implements Runnable{
 	
 	public void mousePressed(MouseEvent me) {
 		JPopupMenu popup = new JPopupMenu();
-		JMenuItem jmi = new JMenuItem("’l‚ğİ’è‚·‚é");
+		JMenuItem jmi = new JMenuItem("å€¤ã‚’è¨­å®šã™ã‚‹");
 		jmi.addActionListener(this);
 		popup.add(jmi);
 		popup.show(me.getComponent(), me.getX(), me.getY());

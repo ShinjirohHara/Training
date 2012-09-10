@@ -29,7 +29,6 @@ public class DegitalWatch extends Frame{
 	}
 	DegitalWatch() {
 		super("DegitalWatch");
-		setSize(200, 100);
 		setVisible(true);
 		addWindowListener(new WindowAdapter(){
 			public void windowClosing(WindowEvent e) {

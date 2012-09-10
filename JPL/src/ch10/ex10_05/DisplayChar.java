@@ -4,7 +4,7 @@ public class DisplayChar {
 	public static void main(String[] args) {
 		dispChar('0', '9');
 		dispChar('A', 'Z');
-		dispChar('Ç†', 'ÇÒ');
+		dispChar('„ÅÇ', '„Çì');
 	}
 	
 	static void dispChar(char S, char E) {

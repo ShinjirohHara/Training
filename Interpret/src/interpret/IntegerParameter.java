@@ -22,14 +22,14 @@ public class IntegerParameter extends ParameterAnalyzer implements Runnable{
 	
 	public void mousePressed(MouseEvent me) {
 		JPopupMenu popup = new JPopupMenu();
-		JMenuItem jmi = new JMenuItem("’l‚ğİ’è‚·‚é");
+		JMenuItem jmi = new JMenuItem("set parameter");
 		jmi.addActionListener(this);
 		popup.add(jmi);
 		popup.show(me.getComponent(), me.getX(), me.getY());
 	}
 	
 
-	@Override
+
 	public void actionPerformed(ActionEvent ae) {
 		new Thread(this).start();
 	}

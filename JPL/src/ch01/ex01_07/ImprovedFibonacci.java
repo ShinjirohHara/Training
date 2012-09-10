@@ -2,7 +2,7 @@ package ch01.ex01_07;
 
 
 public class ImprovedFibonacci {
-	private static final String title = "ƒtƒBƒ{ƒiƒbƒ`”—ñ";
+	private static final String title = "ãƒ•ã‚£ãƒœãƒŠãƒƒãƒæ•°åˆ—";
 	private static final int MAX_INDEX = 9;
 	public static void main(String[] args) {
 		int lo = 1;

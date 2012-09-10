@@ -12,7 +12,7 @@ public class FloatParameter extends ParameterAnalyzer implements Runnable{
 	
 	public FloatParameter(Class<Float> param, FieldAnalyzer owner) {
 		super(param, owner);
-		// TODO ©“®¶¬‚³‚ê‚½ƒRƒ“ƒXƒgƒ‰ƒNƒ^[EƒXƒ^ƒu
+		// TODO è‡ªå‹•ç”Ÿæˆã•ã‚ŒãŸã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ãƒ¼ãƒ»ã‚¹ã‚¿ãƒ–
 	}
 	
 
@@ -23,7 +23,7 @@ public class FloatParameter extends ParameterAnalyzer implements Runnable{
 	
 	public void mousePressed(MouseEvent me) {
 		JPopupMenu popup = new JPopupMenu();
-		JMenuItem jmi = new JMenuItem("’l‚ğİ’è‚·‚é");
+		JMenuItem jmi = new JMenuItem("å€¤ã‚’è¨­å®šã™ã‚‹");
 		jmi.addActionListener(this);
 		popup.add(jmi);
 		popup.show(me.getComponent(), me.getX(), me.getY());

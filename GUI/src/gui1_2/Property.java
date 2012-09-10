@@ -20,8 +20,8 @@ import java.awt.event.WindowEvent;
 public class Property extends Dialog implements ActionListener{
 
 		static final long serialVersionUID = 7331917309522579598L;
-		static final String TITLE_NAME = "ï\é¶ÇÃÉvÉçÉpÉeÉB";
-		static final String MENU_NAME = "ÉvÉçÉpÉeÉB";
+		static final String TITLE_NAME = "Ë°®Á§∫„ÅÆ„Éó„É≠„Éë„ÉÜ„Ç£";
+		static final String MENU_NAME = "„Éó„É≠„Éë„ÉÜ„Ç£";
 		
 		Choice font = new Choice();
 		Choice size = new Choice();
@@ -40,7 +40,7 @@ public class Property extends Dialog implements ActionListener{
 			
 			Panel fontPanel = new Panel();
 			fontPanel.setLayout(new FlowLayout());
-			Label fontLabel = new Label("ÉtÉHÉìÉg");
+			Label fontLabel = new Label("„Éï„Ç©„É≥„Éà");
 			fontPanel.add(fontLabel);
 			font.add(Font.SERIF);
 			font.add(Font.SANS_SERIF);
@@ -51,7 +51,7 @@ public class Property extends Dialog implements ActionListener{
 			
 			Panel fontSizePanel = new Panel();
 			fontSizePanel.setLayout(new FlowLayout());
-			fontSizePanel.add(new Label("ÉTÉCÉY"));
+			fontSizePanel.add(new Label("„Çµ„Ç§„Ç∫"));
 			size.add("16");
 			size.add("32");
 			size.add("48");
@@ -65,7 +65,7 @@ public class Property extends Dialog implements ActionListener{
 			
 			Panel stringColorPanel = new Panel();
 			stringColorPanel.setLayout(new FlowLayout());
-			stringColorPanel.add(new Label("ï∂éöêF"));
+			stringColorPanel.add(new Label("ÊñáÂ≠óËâ≤"));
 			stringColorPanel.add(color);
 			for (ColorProperty element: ColorProperty.values()) {
 				color.add(element.toString());
@@ -75,7 +75,7 @@ public class Property extends Dialog implements ActionListener{
 			
 			Panel backGroundColorPanel = new Panel();
 			backGroundColorPanel.setLayout(new FlowLayout());
-			backGroundColorPanel.add(new Label("îwåiêF"));
+			backGroundColorPanel.add(new Label("ËÉåÊôØËâ≤"));
 			backGroundColorPanel.add(bkColor);
 			for (ColorProperty element: ColorProperty.values()) {
 				bkColor.add(element.toString());

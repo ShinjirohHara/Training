@@ -11,7 +11,7 @@ public class IntervalPrintMessage implements Runnable{
 	
 
 	public void run() {
-		System.out.println(interval+"•bŠÔŠu‚ÅŒv‘ª‚ğn‚ß‚Ü‚·");
+		System.out.println(interval+"ç§’é–“éš”ã§è¨ˆæ¸¬ã‚’å§‹ã‚ã¾ã™");
 		while(true) {
 			try {
 				print();
@@ -31,7 +31,7 @@ public class IntervalPrintMessage implements Runnable{
 		}
 		printNum++;
 		current = 0;
-		System.out.println(interval*printNum + "•bŒo‰ß‚µ‚Ü‚µ‚½.");
+		System.out.println(interval*printNum + "ç§’çµŒéã—ã¾ã—ãŸ.");
 		
 		
 	}

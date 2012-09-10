@@ -22,7 +22,7 @@ public class ParameterSetWindow extends Frame implements ActionListener {
 	private boolean isSetParam;
 	
 	public ParameterSetWindow() {
-		super("’l‚ğƒZƒbƒg‚µ‚Ä‚­‚¾‚³‚¢");
+		super("å€¤ã‚’ã‚»ãƒƒãƒˆã—ã¦ãã ã•ã„ã€‚");
 		setSize(300,150);
 		GridBagLayout layOut = new GridBagLayout();
 		setLayout(layOut);
@@ -69,7 +69,6 @@ public class ParameterSetWindow extends Frame implements ActionListener {
 			notifyAll();
 			setVisible(false);
 		}
-		
 	}
 
 }

@@ -42,7 +42,7 @@ public class Display extends Frame implements ActionListener {
 		setVisible(true);
 		MenuBar mb = new MenuBar();
 		setMenuBar(mb);
-		Menu menuDisp = new Menu("•\Ž¦");
+		Menu menuDisp = new Menu("è¡¨ç¤º");
 		mb.add(menuDisp);
 		MenuItem itemProp = new MenuItem(Property.MENU_NAME);
 		menuDisp.add(itemProp);

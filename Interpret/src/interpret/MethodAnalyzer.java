@@ -3,6 +3,9 @@ package interpret;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
+import java.io.ByteArrayOutputStream;
+import java.io.OutputStream;
+import java.io.PrintStream;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Type;
@@ -33,7 +36,7 @@ public class MethodAnalyzer extends DefaultMutableTreeNode implements ActionList
 
 	public void mousePressed(MouseEvent me) {
 		JPopupMenu popup = new JPopupMenu();
-		JMenuItem jmi = new JMenuItem("é¿çsÇ∑ÇÈ");
+		JMenuItem jmi = new JMenuItem("execute");
 		jmi.addActionListener(this);
 		popup.add(jmi);
 		popup.show(me.getComponent(), me.getX(), me.getY());
@@ -46,16 +49,26 @@ public class MethodAnalyzer extends DefaultMutableTreeNode implements ActionList
 			params[i] = ((ParameterAnalyzer)getChildAt(i)).getData();
 			System.out.println("param"+params[i]+params[i].getClass());
 		}
+		
+		
+		
 		try {
 			System.out.println("object:"+classAnalyzer.getData().getClass());
 			System.out.println("method:"+method.getDeclaringClass());
-			method.invoke(classAnalyzer.getData(), params);
+			Object result = method.invoke(classAnalyzer.getData(), params);
+			if (result != null)
+				new ResultWindow(result.toString());
+			else 
+				new ResultWindow("null");
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		} catch (IllegalAccessException e) {
 			e.printStackTrace();
 		} catch (InvocationTargetException e) {
-			e.printStackTrace();
+			OutputStream outStream = new ByteArrayOutputStream();
+			PrintStream print = new PrintStream(outStream);
+			e.getCause().printStackTrace(print);
+			new ResultWindow(outStream.toString());
 		}
 		
 	}
