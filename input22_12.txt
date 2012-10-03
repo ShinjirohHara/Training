@@ -1,0 +1,5 @@
+test1=111
+test2=11
+test2=abc
+hara=shinjiroh
+mfp = ricoh

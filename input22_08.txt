@@ -1,0 +1,4 @@
+hard,soft,ricoh,test,java,,,
+c,c++,perl,schema,prolog
+php,vb,pascal,fortran,lisp
+

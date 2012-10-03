@@ -16,10 +16,13 @@ public class DigitalWatch extends JPanel
 
 
 	private static final long serialVersionUID = -6817980970800362509L;
+	private Font currentFont = new Font("dialog", Font.PLAIN, 64);
 
 	public static void main (String args[]) {
+		
 		JFrame frame = new JFrame("DigitalWatch");
-		frame.setSize(200, 100);
+		frame.setSize(350, 200);
+		
 		frame.setVisible(true);
 		frame.addWindowListener(new WindowAdapter(){
 			public void windowClosing(WindowEvent e) {
@@ -40,19 +43,12 @@ public class DigitalWatch extends JPanel
 	}
 	
 	public void paintComponent(Graphics g) {
-		Date date = new Date();
+		
 		SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss");
-		Dimension dim = getSize();
-		double width =  dim.getWidth();
-		double height = dim.getHeight();
-		double size = 0;
-		if (width < height *2 ) {
-			size = width/5;
-		} else {
-			size = height/2.5;
-		}
-		g.setFont(new Font("dialog", Font.BOLD, (int) size));
-		g.drawString(sdf.format(date), (int)width/15, (int) height/2+30);
+		String dateString = sdf.format(new Date());
+		g.setFont(currentFont);
+		g.drawString(dateString, 30, 100);
+
 	}
 	
 
