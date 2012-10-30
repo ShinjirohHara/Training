@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="15" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
 <window height="768" maximized="true" width="1024" x="237" y="175">
 <fastViewData fastViewLocation="1024"/>
@@ -30,7 +30,7 @@
 </coolbarLayout>
 <page aggregateWorkingSetId="Aggregate for window 1343222535212" focus="true" label="ワークスペース - &lt;Java EE&gt;">
 <editors>
-<editorArea activeWorkbook="DefaultEditorWorkbook">
+<editorArea activeWorkbook="org.eclipse.ui.internal.EditorStack@630dce45">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -46,8 +46,6 @@
 <part id="9"/>
 <part id="10"/>
 <part id="11"/>
-<part id="12"/>
-<part id="13"/>
 </presentation>
 </folder>
 </info>
@@ -58,19 +56,10 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
-<part id="4"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Property.java" partName="Property.java" path="C:/Users/shara.AD/EclipseWorkspace/JavaTraining/GUI/src/gui1_4/Property.java" title="Property.java" tooltip="GUI/src/gui1_4/Property.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GUI/src/gui1_4/Property.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1199" selectionTopPixel="408"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DigitalWatch.java" partName="DigitalWatch.java" path="C:/Users/shara/EclipseWorkspace/JavaTraining/GUI/src/gui1_4/DigitalWatch.java" title="DigitalWatch.java" tooltip="GUI/src/gui1_4/DigitalWatch.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GUI/src/gui1_4/DigitalWatch.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1292" selectionTopPixel="568"/>
-</editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Property.java" partName="Property.java" path="C:/Users/shara/EclipseWorkspace/JavaTraining/GUI/src/gui1_3/Property.java" title="Property.java" tooltip="GUI/src/gui1_3/Property.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GUI/src/gui1_3/Property.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1048" selectionTopPixel="208"/>
@@ -111,17 +100,9 @@
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Interpret/src/interpret/ConstructorAnalyzer.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="582" selectionTopPixel="0"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FieldAnalyzer.java" partName="FieldAnalyzer.java" path="C:/Users/shara/EclipseWorkspace/JavaTraining/Interpret/src/interpret/FieldAnalyzer.java" title="FieldAnalyzer.java" tooltip="Interpret/src/interpret/FieldAnalyzer.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Interpret/src/interpret/FieldAnalyzer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="455" selectionTopPixel="0"/>
-</editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LongParameter.java" partName="LongParameter.java" path="C:/Users/shara/EclipseWorkspace/JavaTraining/Interpret/src/interpret/LongParameter.java" title="LongParameter.java" tooltip="Interpret/src/interpret/LongParameter.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Interpret/src/interpret/LongParameter.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="799" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Interpreter.java" partName="Interpreter.java" path="C:/Users/shara/EclipseWorkspace/JavaTraining/Interpret/src/interpret/Interpreter.java" title="Interpreter.java" tooltip="Interpret/src/interpret/Interpreter.java" workbook="org.eclipse.ui.internal.EditorStack@630dce45">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Interpret/src/interpret/Interpreter.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="895" selectionTopPixel="101"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IntegerParameter.java" partName="IntegerParameter.java" path="C:/Users/shara/EclipseWorkspace/JavaTraining/Interpret/src/interpret/IntegerParameter.java" title="IntegerParameter.java" tooltip="Interpret/src/interpret/IntegerParameter.java" workbook="org.eclipse.ui.internal.EditorStack@630dce45">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Interpret/src/interpret/IntegerParameter.java"/>
@@ -134,10 +115,6 @@
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Property.java" partName="Property.java" path="C:/Users/shara/EclipseWorkspace/JavaTraining/GUI/src/gui1_2/Property.java" title="Property.java" tooltip="GUI/src/gui1_2/Property.java" workbook="org.eclipse.ui.internal.EditorStack@630dce45">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/GUI/src/gui1_2/Property.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2898" selectionTopPixel="852"/>
-</editor>
-<editor focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClassAnalyzer.java" partName="ClassAnalyzer.java" path="C:/Users/shara/EclipseWorkspace/JavaTraining/Interpret/src/interpret/ClassAnalyzer.java" title="ClassAnalyzer.java" tooltip="Interpret/src/interpret/ClassAnalyzer.java" workbook="org.eclipse.ui.internal.EditorStack@630dce45">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Interpret/src/interpret/ClassAnalyzer.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1167" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -288,13 +265,9 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Interpret/src/interpret/StringParameter.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Interpret/src/interpret/ParameterAnalyzer.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Interpret/src/interpret/BooleanParameter.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/GUI/src/gui1_4/Property.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Interpret/src/interpret/Interpreter.java"/>
 </editors>
-<item historyLabel="Property.java" index="4">
-<position info="not_deleted" x="901" y="0"/>
-</item>
-<item historyLabel="IntegerParameter.java" index="0">
-<position info="not_deleted" x="849" y="0"/>
-</item>
 <item historyLabel="ParameterSetWindow.java" index="2">
 <position info="not_deleted" x="363" y="0"/>
 </item>
@@ -436,8 +409,14 @@
 <item historyLabel="BooleanParameter.java" index="10">
 <position info="not_deleted" x="680" y="0"/>
 </item>
-<item active="true" historyLabel="FieldAnalyzer.java" index="6">
+<item historyLabel="FieldAnalyzer.java" index="6">
 <position info="not_deleted" x="455" y="0"/>
+</item>
+<item historyLabel="Property.java" index="11">
+<position info="not_deleted" x="1199" y="0"/>
+</item>
+<item active="true" historyLabel="Interpreter.java" index="12">
+<position info="not_deleted" x="0" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>

@@ -3,8 +3,6 @@
 	<classpathentry kind="src" path="GUI/src"/>
 	<classpathentry kind="src" path="Interpret/src"/>
 	<classpathentry kind="src" path="JPL/src"/>
-	<classpathentry kind="lib" path=".metadata/.plugins/com.google.appengine.eclipse.core/appengine-sdk-proxy.jar"/>
-	<classpathentry kind="lib" path=".metadata/.plugins/com.google.appengine.eclipse.core/appengine-tools-api.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="output" path="JPL/bin"/>
 </classpath>
