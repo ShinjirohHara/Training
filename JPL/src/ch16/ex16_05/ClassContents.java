@@ -9,11 +9,9 @@ import java.util.List;
 public class ClassContents {
 	public static void main(String[] args) {
 		if (args.length < 1) throw new IllegalArgumentException("too few arguments");
-		TypeDesc desc = new TypeDesc();
-
 		try {
 			Class<?> c = Class.forName(args[0]);
-			desc.printType(c, 0, TypeDesc.basic);
+			System.out.println(c);
 			for (Annotation elem : c.getAnnotations()) 
 				System.out.println("  "+elem);
 			

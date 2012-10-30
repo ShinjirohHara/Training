@@ -6,12 +6,15 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+
 public class ClassContents {
 	public static void main(String[] args) {
 		if (args.length < 1) throw new IllegalArgumentException("too few arguments");
+		TypeDesc desc = new TypeDesc();
+
 		try {
 			Class<?> c = Class.forName(args[0]);
-			System.out.println(c);
+			desc.printType(c, 0, TypeDesc.basic);
 			for (Annotation elem : c.getAnnotations()) 
 				System.out.println("  "+elem);
 			
