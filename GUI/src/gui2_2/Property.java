@@ -2,7 +2,6 @@ package gui2_2;
 
 import java.awt.Button;
 import java.awt.Choice;
-import java.awt.Color;
 import java.awt.Dialog;
 import java.awt.FlowLayout;
 import java.awt.Font;

@@ -22,7 +22,7 @@ public class DigitalWatch extends JPanel implements ActionListener {
 	public static void main (String args[]) {
 		
 		JFrame frame = new JFrame("DigitalWatch");
-		frame.setVisible(true);
+		
 		frame.setSize(500, 200);
 		
 		frame.addWindowListener(new WindowAdapter(){
@@ -38,7 +38,7 @@ public class DigitalWatch extends JPanel implements ActionListener {
 		watch.setMenu(mb);
 		frame.setMenuBar(mb);
 		frame.add(watch, BorderLayout.CENTER);
-		
+		frame.setVisible(true);
 		while(true) {
 			frame.repaint();
 			try {
@@ -64,7 +64,7 @@ public class DigitalWatch extends JPanel implements ActionListener {
 
 
 	public void actionPerformed(ActionEvent e) {
-		property.setVisible(true);
+		// property.setVisible(true);
 	}
 
 

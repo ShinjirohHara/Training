@@ -23,7 +23,7 @@ public class DigitalWatch extends JPanel
 		JFrame frame = new JFrame("DigitalWatch");
 		frame.setSize(350, 200);
 		
-		frame.setVisible(true);
+		
 		frame.addWindowListener(new WindowAdapter(){
 			public void windowClosing(WindowEvent e) {
 				System.exit(0);
@@ -32,6 +32,7 @@ public class DigitalWatch extends JPanel
 		
 		DigitalWatch watch = new DigitalWatch();
 		frame.add(watch, BorderLayout.CENTER);
+		frame.setVisible(true);
 		while(true) {
 			frame.repaint();
 			try {
@@ -46,6 +47,7 @@ public class DigitalWatch extends JPanel
 		
 		SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss");
 		String dateString = sdf.format(new Date());
+		System.out.println(dateString);
 		g.setFont(currentFont);
 		g.drawString(dateString, 30, 100);
 
